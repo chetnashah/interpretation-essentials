@@ -64,7 +64,7 @@ const eva = new Eva();
 assert.strictEqual(eva.eval(1), 1);
 // double quoted strings
 assert.strictEqual(eva.eval('"hello"'), 'hello');
-assert.strictEqual(eva.eval(['+', 1, 5]), 6);
+assert.strictEqual(eva.eval(['+', 1, 5]), 6);// S-Exp are represented as arrays
 
 assert.strictEqual(eva.eval(['var', 'k', 11]), 11);
 assert.strictEqual(eva.eval('k'), 11);
