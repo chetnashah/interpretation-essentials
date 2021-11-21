@@ -1,11 +1,12 @@
 
-`Expression` `eval`uate to a `value`.
+`Expression` `eval`uate to a `value`, under an `env`ironment
 
-### COre api
+### Core API
 
 Core api is usually an `eval` function, that takes in a program and returns a value.
 Eval when does not get environment, by default uses global environment.
-
+* Core api:
+`eval: (program, env) => value`
 
 ### AST interpretation/eval
 
